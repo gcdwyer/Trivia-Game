@@ -3,6 +3,15 @@
 }
 
 .questions {
-	color: red;
-	display: inline-flex;
+	margin-left: 10px;
+}
+
+hr {
+    border-color: black;
+    width: 100%;
+}
+
+p {
+	margin-left:1px;
+	display: inline-block;
 }
