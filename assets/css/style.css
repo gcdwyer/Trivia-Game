@@ -1,5 +1,6 @@
 .container {
 	text-align: center;
+	background-color: white;
 }
 
 .questions {
@@ -12,7 +13,10 @@ hr {
 }
 
 button {
-
 	height: 50px;
 	width: 100px;
+}
+
+body {
+	background-image: url("../images/background.png")
 }

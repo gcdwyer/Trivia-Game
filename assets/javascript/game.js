@@ -1,44 +1,35 @@
 window.onload = function() {
-
 	// click start button to start game
     $("#startButton").on("click", game.start);
     // hide reset button until game is finished
     $("#resetButton").hide();
-
 };
 
 // variables ============================================================================
-
 var questions = [
 
 {question:"How many squares are in normal Monopoly board?",
 answers: [" 20 ", " 40 ", " 60 ", " 80 "],
 correctAnswer: " 40 "
 },
-
 {question: "What is the largest planet of our Solar System called?",
 answers: [" Earth ", " Jupiter ", " Uranus ", " Saturn "],
 correctAnswer: " Jupiter "
 },
-
 {question: "What is the fourth novel of George R.R. Martin's A Song of Ice and Fire book series?",
 answers: [" A Storm of Swords ", " A Clash of Kings ", " A Feast for Crows ", " A Dance with Dragons "],
 correctAnswer: " A Feast for Crows "
 },
-
 {question:"What percent of people live North of the equator?",
 answers: [" 60% ", " 70% ", " 80% ", " 90% "],
 correctAnswer: " 90% "
 },
-
 {question:"How many times does a heart beats in a day?",
 answers: [" 1,000 ", " 10,000 ", " 100,000 ", " 1,000,000 "],
 correctAnswer: " 100,000 "
-
 }];
 
 var intervalId;
-
 var clockRunning = false;
 
 // object =============================================================================
@@ -46,7 +37,7 @@ var game = {
 
 	correct: 0,
 	incorrect: 0,
-	timer: 4,
+	timer: 30,
 
 	start: function() {
 		// hides start button after game starts
@@ -134,9 +125,7 @@ var game = {
 		});
 		// jump to results after score is calculated
 		game.results();
-
 	},
-
 
 	results: function() {
 		// stop timer
@@ -157,8 +146,7 @@ var game = {
 		game.reset();
 	},
 
-
-	// still need to add reset button after results displayed
+	// reset function
 	reset: function () {
 		// resetting variables
 		game.correct = 0;
