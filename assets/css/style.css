@@ -1,10 +1,5 @@
-.container {
-	text-align: center;
-	background-color: white;
-}
-
-.questions {
-	margin-left: 10px;
+body {
+	background-image: url("../images/background.png")
 }
 
 hr {
@@ -15,8 +10,10 @@ hr {
 button {
 	height: 50px;
 	width: 100px;
+	margin-bottom: 20px;
 }
 
-body {
-	background-image: url("../images/background.png")
+.container {
+	text-align: center;
+	background-color: white;
 }

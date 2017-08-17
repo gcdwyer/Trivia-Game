@@ -52,7 +52,7 @@ var game = {
 	        // run loop through all questions
 	        for (var i = 0; i < questions.length; i++) {
 	        	// display questions in html	
-	        	$(".questions").append("<h2> " + questions[i].question + " </h2>");
+	        	$(".questions").append("<h3> " + questions[i].question + " </h3>");
 	        	// run loop though all possible answers
 	        	for (var j = 0; j < questions[i].answers.length; j++) {
 	        		// display answers in html as radio buttons
@@ -137,9 +137,9 @@ var game = {
 		$(".questions").hide();
 
 		// display results in html
-		$(".results").html("<h2>Correct: " + game.correct + "</h2>");
-		$(".results").append("<h2>Incorrect: " + game.incorrect + "</h2>");
-		$(".results").append("<h2>Unanswered: " + unanswered + "</h2>");
+		$(".results").html("<h3>Correct: " + game.correct + "</h3>");
+		$(".results").append("<h3>Incorrect: " + game.incorrect + "</h3>");
+		$(".results").append("<h3>Unanswered: " + unanswered + "</h3>");
 		// show reset button
 		$("#resetButton").show();
 
@@ -160,7 +160,7 @@ var game = {
 
 			if (clockRunning == false) {
 				// removes the results from previous game
-				$(".results h2").remove();
+				$(".results h3").remove();
 				// hides reset button after its clicked
 				$("#resetButton").hide();
 				// shows timer and question divs
@@ -172,9 +172,6 @@ var game = {
 				$('input[name="question-2"]').prop('checked', false);
 				$('input[name="question-3"]').prop('checked', false);
 				$('input[name="question-4"]').prop('checked', false);
-
-				// game.start();
-
 			}
 		});
 	},
